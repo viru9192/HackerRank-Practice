@@ -1,5 +1,7 @@
 def mutate_string(string, position, character):
-    s_new = s[:5] + "k" + s[6:]
+    l = list(string)
+    l[position] = character
+    s_new = ''.join(l)
     return s_new
 
 if __name__ == '__main__':
