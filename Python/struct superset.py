@@ -6,7 +6,7 @@ superset = 'True'
 for i in range(n):
     
     N = set(map(int, input().split()))
-    if not (N.issuperset(A) and N != A):
+    if not (A.issuperset(N) and A != N):
         superset = 'False'
         break
         
